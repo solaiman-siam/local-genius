@@ -10,7 +10,7 @@
   --color-foreground: var(--foreground);
   --color-primaryBg:  #594ff4;
   --color-description: #6D6D6D;
-  --drop-shadow-bloom: 100px 100px 200px #594ff4;
+  --drop-shadow-bloom: 20px -100px 200px rgba(89, 79, 244, 0.2);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
