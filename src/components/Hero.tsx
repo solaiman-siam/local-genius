@@ -2,12 +2,16 @@ import Image from "next/image";
 import Container from "./shared/Container";
 
 import Bot from "@/assets/images/bot.png";
+import { IHeroCard } from "../../types";
 
-function Hero() {
+async function Hero() {
+
+  const res = await fetch("http://localhost:5000/heroCards" , {cache: 'force-cache'});
+  const heroCards = await res.json();
+
   return (
     <Container>
-      <div className="flex relative flex-col items-center gap-24 pt-24">
-
+      <div className="flex relative flex-col items-center gap-24 py-24">
         <div className="flex flex-col items-center gap-8">
           <h1 className="text-5xl font-medium">
             Trusted Local Discovery, Instantly by Text or Chat.
@@ -17,56 +21,22 @@ function Hero() {
             outdoor experiences- handpicked , vetted and delivered instantly by
             your AI-Powered local assistant.
           </p>
-
-          <button className="bg-primaryBg text-white px-6 py-3 rounded-full ">
+          <button className="bg-primaryBg drop-shadow-bloomButton cursor-pointer text-white px-6 py-3 rounded-full ">
             Start Your Free Trial
           </button>
         </div>
-        <div className="grid  drop-shadow-bloom grid-cols-4 gap-6">
-          <div className="flex flex-col gap-3 p-7 bg-white rounded-2xl">
-            <div className="rounded-full bg-white p-1">
+        <div className="grid drop-shadow-bloom2 grid-cols-4 gap-6">
+          {heroCards.map((card : IHeroCard ) => (
+            <div key={card.id} className="flex flex-col  gap-3 p-7 bg-[#F6F6F6] rounded-2xl">
+              <div className="rounded-full w-fit bg-white p-3">
                 <Image src={Bot} alt="bot" />
+              </div>
+              <h3 className="font-medium text-lg">{card.title}</h3>
+              <p className="text-description text-[15px] ">
+                {card.description}
+              </p>
             </div>
-            <h3 className="font-medium text-lg">Local Made Smarter</h3>
-            <p className="text-description text-[15px] ">
-              Local Genius is your AI-powered local assistant. No apps. No
-              downloads. Just fast, secure recommendations from top- rated local
-              businesses.
-            </p>
-          </div>
-          <div className="flex flex-col gap-3 p-7 bg-white rounded-2xl">
-            <div className="rounded-full bg-white p-1">
-                <Image src={Bot} alt="bot" />
-            </div>
-            <h3 className="font-medium text-lg">Local Made Smarter</h3>
-            <p className="text-description text-[15px] ">
-              Local Genius is your AI-powered local assistant. No apps. No
-              downloads. Just fast, secure recommendations from top- rated local
-              businesses.
-            </p>
-          </div>
-          <div className="flex flex-col gap-3 p-7 bg-white rounded-2xl">
-            <div className="rounded-full bg-white p-1">
-                <Image src={Bot} alt="bot" />
-            </div>
-            <h3 className="font-medium text-lg">Local Made Smarter</h3>
-            <p className="text-description text-[15px] ">
-              Local Genius is your AI-powered local assistant. No apps. No
-              downloads. Just fast, secure recommendations from top- rated local
-              businesses.
-            </p>
-          </div>
-          <div className="flex drop-shadow-bloom flex-col gap-3 p-7 bg-white rounded-2xl">
-            <div className="rounded-full bg-white p-1">
-                <Image src={Bot} alt="bot" />
-            </div>
-            <h3 className="font-medium text-lg">Local Made Smarter</h3>
-            <p className="text-description text-[15px] ">
-              Local Genius is your AI-powered local assistant. No apps. No
-              downloads. Just fast, secure recommendations from top- rated local
-              businesses.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </Container>
