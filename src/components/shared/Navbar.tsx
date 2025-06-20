@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex items-center gap-12 ">
             <Image src={Logo} alt="logo" />
             <div className="flex items-center gap-6">
-              <Link href={""}>
+              <Link href={"subscription"}>
                 <h4 className="font-medium text-sm  text-black">
                   Manage Subscription
                 </h4>
