@@ -2,9 +2,9 @@ import Image from "next/image";
 import TextLogo from "@/assets/images/text-white-logo.png";
 import Link from "next/link";
 
-import Facebook from '@/assets/images/facebook_logo.png'
-import Instagram from '@/assets/images/formkit_instagram.png'
-import Tiktok from '@/assets/images/tiktok_logo.png'
+import { RiInstagramFill } from "react-icons/ri";
+import { AiFillTikTok } from "react-icons/ai";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -77,7 +77,7 @@ const Footer = () => {
             <h3 className="text-white/80 text-lg pt-6 pb-2">
               Contact the Local Genius Team
             </h3>
-            <p className="text-white/80 text-base">
+            <p className="text-white/80  text-sm">
               Email: support@localgeniusapp.com
             </p>
           </div>
@@ -85,12 +85,11 @@ const Footer = () => {
         <div>
             <h3 className="text-white/80 pb-1.5">Follow Us</h3>
             <div className="flex gap-4 items-center">
-                <Link href={''}> <Image src={Instagram} alt="instagram"/></Link>
-                <Link href={''}> <Image src={Facebook} alt="facebook"/></Link>
-                <Link href={''}> <Image src={Tiktok} alt="tiktok"/></Link>
+                <Link href={''}> <RiInstagramFill size={28} className="hover:text-white text-white/50 transition-all duration-200" /></Link>
+                <Link href={''}> <FaFacebookSquare size={25} className="hover:text-white text-white/50 transition-all duration-200" /></Link>
+                <Link href={''}> <AiFillTikTok size={28} className="hover:text-white text-white/50 transition-all duration-200" /></Link>
             </div>
         </div>
-
         <hr  className="w-full text-white/10 mt-16"/>
         <h4 className="text-center pt-4 text-white/60 font-light"> Copyright  2025. Local Genius. All rights reserved.</h4>
       </div>

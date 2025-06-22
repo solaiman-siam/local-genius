@@ -5,7 +5,7 @@ import Segment from "./clientComponent/Segment";
 
 const SubscriptionPlan = () => {
   return (
-    <div className="rounded-xl max-w-[800px] mx-auto p-10 bg-[#F6F6F6]">
+    <div className="rounded-xl drop-shadow-bloom2 max-w-[800px] mx-auto p-10 bg-[#F6F6F6]">
       <h3 className="text-4xl font-medium pb-4">Subscription Plan</h3>
       <h4 className="text-lg font-medium text-description pb-6">
         Your AI-Powered Local Assistant

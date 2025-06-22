@@ -1,30 +1,38 @@
+"use client"
 import Image from "next/image";
 import Logo from "@/assets/images/local_genius_logo.png";
 import Link from "next/link";
 import Container from "./Container";
+import { usePathname } from "next/navigation";
 
 
 const Navbar = () => {
+
+  const pathName = usePathname()
+
+  
+
+
   return (
     <div>
       <Container>
         <div className="bg-[#E6E5E7] rounded-full flex items-center justify-between px-4 py-px ">
           <div className="flex items-center gap-12 ">
-            <Image src={Logo} alt="logo" />
-            <div className="flex items-center gap-6">
-              <Link href={"subscription"}>
-                <h4 className="font-medium text-sm  text-black">
+           <Link href={'/'}> <Image src={Logo} alt="logo" /></Link>
+            <div className="flex items-center ">
+              <Link href={"/subscription"}>
+                <h4 className={`font-medium text-sm py-2 px-2  text-black ${pathName === '/subscription' ? ' drop-shadow-button rounded-xs  text-primaryBg border-primaryBg' : ''}`}>
                   Manage Subscription
                 </h4>
               </Link>
-              <Link href={""}>
-                <h4 className="font-medium text-sm  text-black">Chat</h4>
+              <Link href={"/dashboard"}>
+                <h4 className="font-medium text-sm px-2 py-2 text-black">Chat</h4>
               </Link>
             </div>
           </div>
           <div className="flex items-center gap-8">
-            <Link href={''}> <h4 className="font-medium text-sm text-black">About Us</h4> </Link>
-            <button className="text-white text-sm px-4 py-3 rounded-full bg-primaryBg ">Get Started</button>
+            <Link href={'/about'}> <h4 className={`font-medium px-2 py-2 text-sm text-black ${pathName === '/about' ? ' drop-shadow-button rounded-xs  text-primaryBg  border-primaryBg' : ''}`}>About Us</h4> </Link>
+            <button className="text-white cursor-pointer text-sm px-6 py-3 rounded-full bg-primaryBg ">Get Started</button>
           </div>
         </div>
       </Container>

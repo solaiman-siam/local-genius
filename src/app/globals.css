@@ -11,7 +11,8 @@
   --color-primaryBg:  #594ff4;
   --color-textPrimary: #3D3D3D;
   --color-description: #6D6D6D;
-  --drop-shadow-bloom2: 0px 0px 200px rgba(89, 79, 244, 0.2);
+  --drop-shadow-bloom2: 0px 0px 100px rgba(89, 79, 244, 0.2);
+  --drop-shadow-button: 2px 200px 100px rgba(89, 79, 244, 0.4);
   --drop-shadow-bloomButton: -300px -20px 200px rgba(89, 79, 244, 0.8);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

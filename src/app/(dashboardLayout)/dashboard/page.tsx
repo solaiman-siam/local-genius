@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
+
 import React from 'react';
 
 
@@ -11,10 +11,12 @@ export const metadata : Metadata = {
 
 const DashboardPage = () => {
     return (
-        <div className='bg-white w-full h-screen'>
-            <h1 className='text-4xl font-semibold text-black'>From Dashboard Home</h1>
-
-            <Link href={'/settings'}> <h4 className='text-semibold fon-medium text-black py-8'>Settings Page</h4> </Link>
+        <div className=' w-full  flex justify-center items-center'>
+           <div className='flex flex-col gap-2 h-full justify-center items-center'>
+             <h1 className='text-4xl font-medium'>Welcome to Local Genius</h1>
+            <p className='text-description  w-6/12 text-center'>Get started by writing a task and Chat can do the rest. Not sure where to start? Check out the Prompt Library for inspiration.</p>
+           </div>
+            
         </div>
     );
 };
