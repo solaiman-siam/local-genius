@@ -12,40 +12,39 @@ function FaqAccordion() {
     {
       key: "1",
       label: "What is Local Genius?",
-      children: <p>{text}</p>,
+      children: <p className="text-description text-base">{text}</p>,
     },
     {
       key: "2",
       label: "How does It work?",
-      children: <p>{text}</p>,
+      children: <p className="text-description text-base">{text}</p>,
     },
     {
       key: "3",
       label: "How are recommendations chosen?",
-      children: <p>{text}</p>,
+      children: <p className="text-description text-base">{text}</p>,
     },
     {
       key: "4",
       label: "Is my information safe?",
-      children: <p>{text}</p>,
+      children: <p className="text-description text-base">{text}</p>,
     },
     {
       key: "5",
       label: "Who is Local Genius for?",
-      children: <p>{text}</p>,
+      children: <p className="text-description text-base">{text}</p>,
     },
     {
       key: "6",
       label: "Do I need to download an app?",
-      children: <p>{text}</p>,
+      children: <p className="text-description text-base">{text}</p>,
     },
     {
       key: "7",
       label: "How much does It cost?",
-      children: <p>{text}</p>,
+      children: <p className="text-description text-base">{text}</p>,
     },
   ];
-  
 
   const onChange = (key: string | string[]) => {
     console.log(key);
@@ -59,11 +58,11 @@ function FaqAccordion() {
         bordered={false}
         expandIcon={({ isActive }) => (
           <div>
-            {isActive ? (
-              <ChevronDown className="rotate-180 transition-transform  duration-400" />
-            ) : (
-              <ChevronDown className="rotate-0 transition-transform  duration-400" />
-            )}
+            <ChevronDown
+              className={`!transition-transform !duration-300 ${
+                isActive ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </div>
         )}
         accordion

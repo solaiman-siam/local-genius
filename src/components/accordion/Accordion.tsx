@@ -14,34 +14,34 @@ function Accordion() {
     {
       key: "1",
       label: "Top-rated, Handpicked Small Businesses",
-      children: <p>{text}</p>,
+      children: <p className={'text-description text-base'}>{text}</p>,
     },
     {
       key: "2",
       label: "Farmers Markets",
-      children: <p>{text}</p>,
+      children: <p className={'text-description text-base'}>{text}</p>,
     },
     {
       key: "3",
       label: "Outdoor Experiences",
-      children: <p>{text}</p>,
+      children: <p className={'text-description text-base'}>{text}</p>,
     },
   ];
   const items2: CollapseProps["items"] = [
     {
       key: "1",
       label: "Curated, Verified, Local Only",
-      children: <p>{text}</p>,
+      children: <p className={'text-description text-base'}>{text}</p>,
     },
     {
       key: "2",
       label: "Privacy Focused",
-      children: <p>{text}</p>,
+      children: <p className={'text-description text-base'}>{text}</p>,
     },
     {
       key: "3",
       label: "Instant Access by Text or Chat",
-      children: <p>{text}</p>,
+      children: <p className={'text-description text-base'}>{text}</p>,
     },
   ];
 
@@ -56,12 +56,12 @@ function Accordion() {
         style={{ backgroundColor: "white" }}
         bordered={false}
         expandIcon={({ isActive }) => (
-          <div>
-            {isActive ? (
-              <ChevronDown className="rotate-180 transition-transform duration-400" />
-            ) : (
-              <ChevronDown className="rotate-0 transition-transform duration-400" />
-            )}
+           <div>
+            <ChevronDown
+              className={`!transition-transform !duration-300 ${
+                isActive ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </div>
         )}
         accordion
@@ -76,11 +76,11 @@ function Accordion() {
         bordered={false}
         expandIcon={({ isActive }) => (
           <div>
-            {isActive ? (
-              <ChevronDown className="rotate-180 transition-transform duration-400" />
-            ) : (
-              <ChevronDown className="rotate-0 transition-transform duration-400" />
-            )}
+            <ChevronDown
+              className={`!transition-transform !duration-300 ${
+                isActive ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </div>
         )}
         accordion
