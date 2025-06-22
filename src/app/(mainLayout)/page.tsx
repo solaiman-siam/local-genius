@@ -2,10 +2,9 @@ import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
 import HowItWorksSec from "@/components/HowItWorksSec";
 import LocalInteligence from "@/components/LocalInteligence";
-
 import SmartFeaturesSec from "@/components/SmartFeaturesSec";
 import SubscriptionPlan from "@/components/SubscriptionPlan";
-import React from "react";
+
 
 const HomePage = () => {
   return (

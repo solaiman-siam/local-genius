@@ -1,10 +1,12 @@
+
+
 import Image from "next/image";
 import React from "react";
 import AboutImg1 from "@/assets/images/about_img1.png";
 import AboutImg2 from "@/assets/images/about_img2.png";
 import Signature from "@/assets/images/Signature.png";
 
-const AboutPage = () => {
+const AboutPage =  () => {
   return (
     <div className="">
       <div className="  bg-[#F6F6F6] ">
@@ -29,10 +31,10 @@ const AboutPage = () => {
               <p className={"w-11/12"}>
                 For Tiffany, a small business owner, it meant finally being seen
                 and supported. For Trisha and Quade, it meant finding trusted
-                recs and uncovering places they didn't even know they were
+                recs and uncovering places they didnt even know they were
                 missing. For Tiffany, a small business owner, it meant finally
                 being seen and supported. For Trisha and Quade, it meant finding
-                trusted recs and uncovering places they didn't even know they
+                trusted recs and uncovering places they didnt even know they
                 were missing.
               </p>
               <p className={"w-11/12"}>
@@ -62,8 +64,8 @@ const AboutPage = () => {
             </h3>
             <p className="text-description text-center pt-4 w-9/12">
               Local Genius makes it easy to find the best local businesses and
-              outdoor experiences anytime, anywhere in the U.S. We've done the
-              digging, vetted the best, and built a trusted network so you don't
+              outdoor experiences anytime, anywhere in the U.S. Weve done the
+              digging, vetted the best, and built a trusted network so you dont
               have to. Just text or chat what you need, and get instant,
               reliable recommendations. No apps. No downloads. Just answers you
               can count on.
@@ -84,10 +86,10 @@ const AboutPage = () => {
                 <p className={""}>
                   For Tiffany, a small business owner, it meant finally being
                   seen and supported. For Trisha and Quade, it meant finding
-                  trusted recs and uncovering places they didn't even know they
+                  trusted recs and uncovering places they didnt even know they
                   were missing. For Tiffany, a small business owner, it meant
                   finally being seen and supported. For Trisha and Quade, it
-                  meant finding trusted recs and uncovering places they didn't
+                  meant finding trusted recs and uncovering places they didnt
                   even know they were missing.
                 </p>
                 <p className={""}>
