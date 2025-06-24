@@ -18,7 +18,7 @@ const theme = {
   token: {
     colorPrimary: "#594FF4", 
     fontFamily: "'Poppins', 'sans-serif'",
-    borderRadius: 8,
+    borderRadius: 6,
   },
 };
 

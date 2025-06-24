@@ -4,13 +4,17 @@ import Logo from "@/assets/images/local_genius_logo.png";
 import Link from "next/link";
 import Container from "./Container";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 
 const Navbar = () => {
 
-  const pathName = usePathname()
+  const pathName = usePathname();
+  const router = useRouter()
 
-  
+  const handleGetStarted = () => {
+    router.push('/dashboard')
+  }
 
 
   return (
@@ -32,7 +36,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-8">
             <Link href={'/about'}> <h4 className={`font-medium px-2 py-2 text-sm text-black ${pathName === '/about' ? ' drop-shadow-button rounded-xs  text-primaryBg  border-primaryBg' : ''}`}>About Us</h4> </Link>
-            <button className="text-white cursor-pointer text-sm px-6 py-3 rounded-full bg-primaryBg ">Get Started</button>
+            <button onClick={handleGetStarted}  className="text-white cursor-pointer text-sm px-6 py-3 rounded-full bg-primaryBg ">Get Started</button>
           </div>
         </div>
       </Container>

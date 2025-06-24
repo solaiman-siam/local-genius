@@ -7,11 +7,13 @@ import { Progress } from "antd";
 import { BsStars } from "react-icons/bs";
 import { Ellipsis, EllipsisVertical, Plus, Share } from "lucide-react";
 import SelectCom from "@/components/select/SelectCom";
+import ProfileIcon from "@/components/navbar/ProfileIcon";
 
 const DashboardPage = ({ children }: { children: ReactNode }) => {
   return (
     <div className="">
       <div className="flex ">
+        {/* sidebar */}
         <div className=" w-[350px] justify-between fixed  min-h-screen p-4 bg-[#F6F6F6] flex flex-col text-black ">
           <div>
             <Link href={"/dashboard"}>
@@ -31,28 +33,28 @@ const DashboardPage = ({ children }: { children: ReactNode }) => {
                   Chat History
                 </h3>
                 <div className="flex flex-col gap-2">
-                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between font-medium">
+                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between ">
                     Coffee shops near downtown{" "}
                     <Ellipsis
                       className="size-5 cursor-pointer"
                       strokeWidth={1.2}
                     />
                   </h4>
-                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between font-medium">
+                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between ">
                     Best parks for jogging{" "}
                     <Ellipsis
                       className="size-5 cursor-pointer"
                       strokeWidth={1.2}
                     />
                   </h4>
-                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between font-medium">
+                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between ">
                     Coffee shops near downtown{" "}
                     <Ellipsis
                       className="size-5 cursor-pointer"
                       strokeWidth={1.2}
                     />
                   </h4>
-                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between font-medium">
+                  <h4 className="px-4 py-2 bg-white cursor-pointer rounded-xl text-black/80 flex items-center justify-between ">
                     Local restaurants with...{" "}
                     <Ellipsis
                       className="size-5 cursor-pointer"
@@ -84,25 +86,29 @@ const DashboardPage = ({ children }: { children: ReactNode }) => {
             </div>
           </div>
         </div>
+
+        {/* cildren and navbar */}
+
         <div className="ml-[350px] flex-1  relative">
+          {/* navbar */}
           <div className="fixed ml-[350px] bg-white left-0  border-b border-black/5 h-14 right-0 ">
             <div className="flex px-4 h-full justify-between w-full items-center">
-            <SelectCom />
+              <SelectCom />
               <div className="flex items-center gap-4">
                 <div>
-                <h4 className="flex items-center gap-2 rounded-full px-3 py-1.5 border border-black/30 cursor-pointer font-medium"> <Share className="size-4.5" /> Share</h4>
-              </div>
-              <div>
-                <EllipsisVertical className="cursor-pointer" size={20} />
-              </div>
-              <div className="border size-10 rounded-full cursor-pointer border-black overflow-hidden">
-                <Image width={20} height={20} className="w-full h-full object-cover" src={'https://media.istockphoto.com/id/1388253782/photo/positive-successful-millennial-business-professional-man-head-shot-portrait.jpg?b=1&s=612x612&w=0&k=20&c=VsTsa0kjyZ7ALe-nyKAUfynyRxZo8H4LRMdu_ecPuOY='} alt="profile"/>
-
-              </div>
+                  <h4 className="flex items-center gap-2 rounded-full px-3 py-1.5 border border-black/15 cursor-pointer font-medium">
+                    {" "}
+                    <Share className="size-4.5" /> Share
+                  </h4>
+                </div>
+                <div>
+                  <EllipsisVertical className="cursor-pointer" size={20} />
+                </div>
+                <ProfileIcon/>
               </div>
             </div>
           </div>
-          <div className="bg-white min-h-screen pt-14 flex-1 w-full">{children}</div>
+          <div className="bg-white pt-14 min-h-screen w-full ">{children}</div>
         </div>
       </div>
     </div>
