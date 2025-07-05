@@ -5,7 +5,7 @@ import Profile4 from "@/assets/images/profile4.png";
 import Profile5 from "@/assets/images/profile5.png";
 import Profile6 from "@/assets/images/profile6.png";
 import Profile7 from "@/assets/images/profile7.png";
-import Profile8 from "@/assets/images/profile8.png";
+import Profile8 from "@/assets/images/Profile8.png";
 
 import Image from "next/image";
 import Accordion from "./accordion/Accordion";

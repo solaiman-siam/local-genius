@@ -6,8 +6,33 @@ import { IHeroCard } from "../../types";
 
 async function Hero() {
 
-  const res = await fetch("http://localhost:5000/heroCards" , {cache: 'force-cache'});
-  const heroCards = await res.json();
+  // const res = await fetch("http://localhost:5000/heroCards" , {cache: 'force-cache'});
+  // const heroCards = await res.json();
+
+
+  const heroCards = [
+  {
+    "id": 1,
+    "title": "Local Made Smarter",
+    "description": "Local Genius is your AI-powered local assistant. No apps. No downloads. Just fast, secure recommendations from top-rated local businesses."
+  },
+  {
+    "id": 2,
+    "title": "Simple, Honest Pricing",
+    "description": "Unlimited local recommendations powered by GPT-4 and real human insight all for one clear, honest price."
+  },
+  {
+    "id": 3,
+    "title": "Instant Access",
+    "description": "Get real-time, trusted local recs by text or chat, wherever you are."
+  },
+  {
+    "id": 4,
+    "title": "Private and Secure",
+    "description": "Your conversations always stay private. No tracking. No data selling. Just secure, trusted answers you can count on."
+  }
+]
+  
 
   return (
     <Container>

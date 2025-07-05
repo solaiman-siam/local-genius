@@ -1,9 +1,6 @@
 import TextAreaCom from "@/components/textarea/TextAreaCom";
-import TextArea from "antd/es/input/TextArea";
-import { ArrowUp } from "lucide-react";
 import { Metadata } from "next";
 
-import React, { useState } from "react";
 
 export const metadata: Metadata = {
   title: "Dashboard",

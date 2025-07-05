@@ -51,7 +51,7 @@ const SubscriptionPlan = () => {
           </h4>
         </div>
       </div>
-      <Segment />
+      <Segment centered={false} />
 
       
 
