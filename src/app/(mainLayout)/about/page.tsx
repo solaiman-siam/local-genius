@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import AboutImg1 from "@/assets/images/about_img1.png";
-import AboutImg2 from "@/assets/images/about_img2.png";
-import Signature from "@/assets/images/Signature.png";
 import localImages from "@/utils/imageProvider";
 
 const AboutPage =  () => {
