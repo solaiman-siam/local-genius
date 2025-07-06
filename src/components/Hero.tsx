@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Container from "./shared/Container";
 
-import Bot from "@/assets/images/bot.png";
+
 import { IHeroCard } from "../../types";
+import localImages from "@/utils/imageProvider";
 
 async function Hero() {
 
@@ -54,7 +55,7 @@ async function Hero() {
           {heroCards.map((card : IHeroCard ) => (
             <div key={card.id} className="flex flex-col  gap-3 p-7 bg-[#F6F6F6] rounded-2xl">
               <div className="rounded-full w-fit bg-white p-3">
-                <Image src={Bot} alt="bot" />
+                <Image src={localImages.bot} alt="bot" />
               </div>
               <h3 className="font-medium text-lg">{card.title}</h3>
               <p className="text-description text-[15px] ">

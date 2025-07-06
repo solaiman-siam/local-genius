@@ -5,6 +5,7 @@ import React from "react";
 import AboutImg1 from "@/assets/images/about_img1.png";
 import AboutImg2 from "@/assets/images/about_img2.png";
 import Signature from "@/assets/images/Signature.png";
+import localImages from "@/utils/imageProvider";
 
 const AboutPage =  () => {
   return (
@@ -19,7 +20,7 @@ const AboutPage =  () => {
             <div className="flex-1 justify-center flex w-full">
               <Image
                 className="w-full h-full object-cover "
-                src={AboutImg1}
+                src={localImages.about1}
                 alt="about_img"
               />
             </div>
@@ -113,13 +114,13 @@ const AboutPage =  () => {
                   feel more connected to your community wherever you are.
                 </p>
                 <p className={" pb-4"}>All the best,</p>
-                <Image src={Signature} alt="signature" />
+                <Image src={localImages.signature} alt="signature" />
               </div>
             </div>
             <div className="flex-1">
               <Image
                 className="w-full h-full"
-                src={AboutImg2}
+                src={localImages.about2}
                 alt="about_img"
               />
             </div>

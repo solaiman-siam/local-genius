@@ -3,9 +3,10 @@ import Image from "next/image";
 import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
-import DefaultProfile from "@/assets/images/default_profile.webp";
+
 import { Camera } from "lucide-react";
 import { DatePicker, DatePickerProps } from "antd";
+import localImages from "@/utils/imageProvider";
 
 const ProfilePage = () => {
   const onDrop = useCallback((acceptedFiles: File[]) => {
@@ -28,7 +29,7 @@ const ProfilePage = () => {
         <div className="size-20 mb-12 relative">
           <Image
             className="rounded-full overflow-hidden object-contain"
-            src={DefaultProfile}
+            src={localImages.defaultProfile}
             alt="profile_img"
           />
           <label

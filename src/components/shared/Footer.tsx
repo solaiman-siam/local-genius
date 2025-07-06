@@ -1,10 +1,11 @@
 import Image from "next/image";
-import TextLogo from "@/assets/images/text-white-logo.png";
+
 import Link from "next/link";
 
 import { RiInstagramFill } from "react-icons/ri";
 import { AiFillTikTok } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
+import localImages from "@/utils/imageProvider";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       <div className="max-w-[1320px] mx-auto ">
         <div className="flex justify-between">
           <div className="flex flex-col ">
-            <Image src={TextLogo} alt="logo" />
+            <Image src={localImages.textWhiteLogo} alt="logo" />
             <h3 className="text-primaryBg -translate-y-4 font-medium ml-12">
               Local Made Smarter
             </h3>

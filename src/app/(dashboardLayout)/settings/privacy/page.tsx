@@ -1,13 +1,13 @@
 import Image from "next/image";
-import PrivacyIcon from "@/assets/images/privacy_icon.png";
 import { Dot } from "lucide-react";
+import localImages from "@/utils/imageProvider";
 
 const PrivacyPage = () => {
   return (
     <div className=" flex flex-col ">
       <div className="border border-black/5 p-8  flex-1 rounded-lg ">
         <div className="flex items-center gap-2">
-          <Image src={PrivacyIcon} alt="privacy" />
+          <Image src={localImages.privacyIcon} alt="privacy" />
           <div className="flex flex-col ">
             <h3 className="text-lg ">Data Privacy</h3>
             <p className="text-black/70 text-[15px]">

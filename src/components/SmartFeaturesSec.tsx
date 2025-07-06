@@ -1,14 +1,8 @@
-import Profile1 from "@/assets/images/profile1.png";
-import Profile2 from "@/assets/images/profile2.png";
-import Profile3 from "@/assets/images/profile3.png";
-import Profile4 from "@/assets/images/profile4.png";
-import Profile5 from "@/assets/images/profile5.png";
-import Profile6 from "@/assets/images/profile6.png";
-import Profile7 from "@/assets/images/profile7.png";
-import Profile8 from "@/assets/images/Profile8.png";
+
 
 import Image from "next/image";
 import Accordion from "./accordion/Accordion";
+import localImages from "@/utils/imageProvider";
 
 function SmartFeaturesSec() {
 
@@ -19,40 +13,40 @@ function SmartFeaturesSec() {
           Made for Localists Like You, Join Us Today!
         </h3>
         <div className="flex justify-center pt-4">
-          <Image className="size-18" src={Profile1} alt="profile" />
+          <Image className="size-18" src={localImages.profile1} alt="profile" />
           <Image
             className="size-18 -translate-x-2"
-            src={Profile2}
+            src={localImages.profile2}
             alt="profile"
           />
           <Image
             className="size-18 -translate-x-4"
-            src={Profile3}
+            src={localImages.profile3}
             alt="profile"
           />
           <Image
             className="size-18 -translate-x-6"
-            src={Profile4}
+            src={localImages.profile4}
             alt="profile"
           />
           <Image
             className="size-18 -translate-x-8"
-            src={Profile5}
+            src={localImages.profile5}
             alt="profile"
           />
           <Image
             className="size-18 -translate-x-10"
-            src={Profile6}
+            src={localImages.profile6}
             alt="profile"
           />
           <Image
             className="size-18 -translate-x-12"
-            src={Profile7}
+            src={localImages.profile7}
             alt="profile"
           />
           <Image
             className="size-18 -translate-x-14"
-            src={Profile8}
+            src={localImages.profile8}
             alt="profile"
           />
         </div>

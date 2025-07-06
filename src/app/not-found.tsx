@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-import NotFound from "@/assets/images/404_error.png";
+
 import Link from "next/link";
+import localImages from "@/utils/imageProvider";
 
 const NotFooundPage = () => {
   return (
     <div className="h-screen w-full bg-white flex flex-col justify-center items-center">
-      <Image src={NotFound} alt="404" />
+      <Image src={localImages.error404} alt="404" />
 
       <p className="text-black w-4/12 text-center">
         The page you are trying to access doesn’t exist or has been moved.Try

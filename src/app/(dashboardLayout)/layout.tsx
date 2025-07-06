@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-
-import Logo from "@/assets/images/local_genius_logo.png";
 import { Progress } from "antd";
 import { BsStars } from "react-icons/bs";
 import { Ellipsis, EllipsisVertical, Plus, Share } from "lucide-react";
 import SelectCom from "@/components/select/SelectCom";
 import ProfileIcon from "@/components/navbar/ProfileIcon";
+import localImages from "@/utils/imageProvider";
 
 const DashboardPage = ({ children }: { children: ReactNode }) => {
   return (
@@ -17,9 +16,8 @@ const DashboardPage = ({ children }: { children: ReactNode }) => {
         <div className=" w-[350px] justify-between fixed  min-h-screen p-4 bg-[#F6F6F6] flex flex-col text-black ">
           <div>
             <Link href={"/dashboard"}>
-              <Image className="w-32" src={Logo} alt="logo" />
+              <Image className="w-32" src={localImages.localGeniusLogo} alt="logo" />
             </Link>
-
             <div className="pt-8 px-2">
               <div className="flex cursor-pointer items-center gap-3">
                 <span className="p-1 flex items-center bg-black w-fit rounded-full New Chat text-white">

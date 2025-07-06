@@ -1,10 +1,11 @@
 "use client"
 import Image from "next/image";
-import Logo from "@/assets/images/local_genius_logo.png";
+
 import Link from "next/link";
 import Container from "./Container";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
+import localImages from "@/utils/imageProvider";
 
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
       <Container>
         <div className="bg-[#E6E5E7] rounded-full flex items-center justify-between px-4 py-px ">
           <div className="flex items-center gap-12 ">
-           <Link href={'/'}> <Image src={Logo} alt="logo" /></Link>
+           <Link href={'/'}> <Image src={localImages.localGeniusLogo} alt="logo" /></Link>
             <div className="flex items-center ">
               <Link href={"/subscription"}>
                 <h4 className={`font-medium text-sm py-2 px-2  text-black ${pathName === '/subscription' ? ' drop-shadow-button rounded-xs  text-primaryBg border-primaryBg' : ''}`}>

@@ -1,7 +1,6 @@
 import SubscriptionPlan from '@/components/SubscriptionPlan';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import React from 'react';
 
 const SubscriptionPage = () => {
     return (

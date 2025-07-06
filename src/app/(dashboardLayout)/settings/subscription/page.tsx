@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import SubscriptionIcon from "@/assets/images/subscription_icon.png";
+
 import { Check } from "lucide-react";
+import localImages from "@/utils/imageProvider";
 
 const SubscriptionPage = () => {
   return (
@@ -10,7 +11,7 @@ const SubscriptionPage = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div>
-              <Image src={SubscriptionIcon} alt="subscription_icon" />
+              <Image src={localImages.subscriptionIcon} alt="subscription_icon" />
             </div>
             <div className="flex flex-col">
               <h3 className="font-medium">Free Plan</h3>

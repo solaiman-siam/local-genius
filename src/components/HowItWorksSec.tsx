@@ -1,8 +1,5 @@
-import React from "react";
-
-import SectionImage from "@/assets/images/HowItWorks.png";
-import CheckImage from "@/assets/images/checkMark.png";
 import Image from "next/image";
+import localImages from "@/utils/imageProvider";
 
 const HowItWorksSec = () => {
   return (
@@ -20,7 +17,7 @@ const HowItWorksSec = () => {
         <div className="flex flex-col space-y-4">
           <div className="flex gap-3 bg-[#F6F6F6] rounded-xl p-4">
             <div>
-              <Image className="size-6 mt-1" src={CheckImage} alt="check" />
+              <Image className="size-6 mt-1" src={localImages.checkMark} alt="check" />
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-xl font-medium pb-2 text-textPrimary">
@@ -36,7 +33,7 @@ const HowItWorksSec = () => {
           </div>
           <div className="flex gap-3 bg-[#F6F6F6] rounded-xl p-4">
             <div>
-              <Image className="size-6 mt-1" src={CheckImage} alt="check" />
+              <Image className="size-6 mt-1" src={localImages.checkMark} alt="check" />
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-xl font-medium pb-2 text-textPrimary">
@@ -49,7 +46,7 @@ const HowItWorksSec = () => {
           </div>
           <div className="flex gap-3 bg-[#F6F6F6] rounded-xl p-4">
             <div>
-              <Image className="size-6 mt-1" src={CheckImage} alt="check" />
+              <Image className="size-6 mt-1" src={localImages.checkMark} alt="check" />
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-xl font-medium pb-2 text-textPrimary">
@@ -73,7 +70,7 @@ const HowItWorksSec = () => {
         </div>
       </div>
       <div>
-        <Image src={SectionImage} alt="sectionImage" />
+        <Image src={localImages.howItWorks} alt="sectionImage" />
       </div>
     </div>
   );

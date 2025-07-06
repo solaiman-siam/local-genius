@@ -1,14 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "@/assets/images/local_genius_logo.png";
+
 import Form from "next/form";
+import localImages from "@/utils/imageProvider";
 
 const LoginPage = () => {
   return (
     <div className="flex justify-center bg-[#F6F6F6] h-screen items-center w-full">
       <div className="max-w-[600px] bg-white p-10 rounded-3xl">
         <div className="flex w-full flex-col items-center justify-center">
-          <Image src={Logo} alt="Logo" />
+          <Image src={localImages.localGeniusLogo} alt="Logo" />
           <h3 className="text-center text-[2.5rem] font-medium  pb-2">
             Create your account
           </h3>
