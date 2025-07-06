@@ -24,10 +24,10 @@ const HowItWorksSec = () => {
                 Ask Anything
               </h3>
               <p className="text-description">
-                “Where’s a cozy cafe nearby?” <br/>
-                 “Cool local bookstores?”  <br/>
-                 “Easy
-                hikes with views?”
+                Where’s a cozy cafe nearby? <br/>
+                 Cool local bookstores?  <br/>
+                 Easy
+                hikes with views?
               </p>
             </div>
           </div>
