@@ -17,7 +17,7 @@ const HomePage = () => {
     >
       <div>
         <Hero />
-        <div className="bg-white relative z-[8] rounded-t-[200px]  rounded-b-[30px] py-20">
+        <div className="bg-white relative z-[8] font-poppins rounded-t-[200px]  rounded-b-[30px] py-20">
           <SmartFeaturesSec />
           <HowItWorksSec />
           <LocalInteligence />

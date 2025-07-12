@@ -9,6 +9,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primaryBg:  #594ff4;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
   --color-textPrimary: #3D3D3D;
   --color-description: #6D6D6D;
   --drop-shadow-bloom2: 0px 0px 100px rgba(89, 79, 244, 0.2);

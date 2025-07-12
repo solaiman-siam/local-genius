@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const DashboardPage = () => {
 
   return (
-    <div className=" w-full relative min-h-[calc(100vh-56px)]  h-full flex-1 flex justify-center items-center">
+    <div className=" w-full relative min-h-[calc(100vh-56px)]   h-full flex-1 flex justify-center items-center">
       <div className="flex flex-col gap-2 h-full justify-center items-center">
         <h1 className="text-4xl pb-2 font-medium">Welcome to Local Genius</h1>
         <p className="text-black/60  w-7/12 text-center">

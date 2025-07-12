@@ -19,12 +19,12 @@ const ProfilePage = () => {
     console.log(date, dateString);
   };
 
-  const commonInput = 'px-2.5 py-2.5  focus:outline-primaryBg text-[14px] text-black/80 focus:outline-[0.4px] rounded-md border border-black/10'
+  const commonInput = 'px-2.5 py-2.5   focus:outline-primaryBg text-[14px] text-black/80 focus:outline-[0.4px] rounded-md border border-black/10'
 
   const [toggle, setToggle] = useState<boolean>(false)
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 ">
       <form className="border border-black/5 p-10 rounded-xl">
         <div className="size-20 mb-12 relative">
           <Image
